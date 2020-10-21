@@ -23,27 +23,8 @@ abstract class RetrofitClient {
                 .baseUrl(Constants.BASE_URL)
                 .build()
 
-            //val BackingService = retrofit.create(BakingApiService::class.java)
             return retrofit
 
         }
     }
 }
-
-/* companion object {
-        @Volatile
-        private var INSTANCE: Retrofit? = null
-
-        private fun getRetrofit(): Retrofit {
-
-            return INSTANCE ?: run {
-                synchronized(this) {
-                    return Retrofit.Builder()
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .baseUrl(BuildConfig.BASE_URL)
-                        .build()
-
-                }
-            }
-        }
-    }*/
